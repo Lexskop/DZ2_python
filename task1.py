@@ -17,7 +17,7 @@ def calc1():
         number = round(number*10, 10)
     if number != 0:
         count = int(math.log10(number) + 1) # именно для логарифма использовал import
-    for i in range(0, count):
+    for i in range(count):
         sum = sum + (number % (10**(i + 1)) - (number % (10**i))) / 10**i
     print(f'Сумма цифр в числе {userNumber} -> {int(sum)}')
 
