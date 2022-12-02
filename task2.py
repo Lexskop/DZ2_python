@@ -11,9 +11,8 @@ def calc():
     if user_number.lower() == 'x':
             print('Bye!')
             return
-    while user_number.isdigit() == False or int(user_number) < 0:
-        if user_number.isdigit() == False:
-            print('Вы ошиблись и ввели "не число" или отрицательное число!')
+    while user_number.isdigit() == False or int(user_number) <= 0:
+        print('Вы ошиблись и ввели "не число" или число меньше 0!')
         user_number = input('Введите значение N -> ')
         if user_number.lower() == 'x':
             print('Bye!')

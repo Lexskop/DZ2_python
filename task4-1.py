@@ -7,7 +7,6 @@
 
 import random
 
-
 def game():
     """
     Непосредственно метод игры
@@ -38,7 +37,6 @@ def game():
         # print('plus ', list_of_coins) # отладка правильного сложения монет
         del list_of_coins[roll_of_master_of_dice]
         del list_of_players[roll_of_master_of_dice]
-        
         # print('delete ', list_of_coins) # отладка правильного удаления игрока
         if roll_of_master_of_dice != len(list_of_coins)+1:
             temp_coins = list_of_coins[roll_of_master_of_dice:len(list_of_coins)+1]
